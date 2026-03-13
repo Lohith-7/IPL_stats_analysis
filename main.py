@@ -13,7 +13,7 @@ df = df.drop(columns=['Matches_Batted','Not_Outs','Balls_Faced','Catches_Taken',
 
 df['Year'] = pd.to_numeric(df['Year'])
 df['Runs_Scored'] = pd.to_numeric(df['Runs_Scored'])
-df['Batting_Strike_Rate'] = pd.to_numeric()
+df['Batting_Strike_Rate'] = pd.to_numeric(df['Batting_Strike_Rate'])
 
 # group by player
 cricketers = df.groupby('Player_Name')
